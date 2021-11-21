@@ -6,8 +6,11 @@ import NotFound from '../NotFound';
 const App = () => (
   <Router>
     <Switch>
-      <Route path="/">
+      <Route exact path="/">
         <Home />
+      </Route>
+      <Route path="*">
+        <NotFound />
       </Route>
     </Switch>
   </Router>
