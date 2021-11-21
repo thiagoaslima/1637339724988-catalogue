@@ -1,10 +1,12 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Router, Switch, Route} from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
 import Home from '../Home';
 import NotFound from '../NotFound';
 
-const App = () => (
-  <Router>
+const App = ({ history = createBrowserHistory() }) => (
+  <Router history={history}>
     <Switch>
       <Route exact path="/">
         <Home />
