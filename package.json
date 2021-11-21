@@ -5,10 +5,15 @@
     "dev:ui": "webpack serve",
     "dev:server": "node ./src/server.js",
     "dev": "concurrently --kill-others \"npm run dev:ui\" \"npm run dev:server\"",
-    "unit": "jest"
+    "unit": "jest",
+    "unit:w": "jest --watch"
   },
   "dependencies": {
+    "@tds/core-box": "^2.4.0",
+    "@tds/core-button-link": "^3.3.0",
+    "@tds/core-css-reset": "^3.0.1",
     "@tds/core-heading": "^3.0.8",
+    "@tds/core-paragraph": "^2.1.0",
     "enzyme": "^3.11.0",
     "express": "^4.17.1",
     "react": "^16.14.0",
