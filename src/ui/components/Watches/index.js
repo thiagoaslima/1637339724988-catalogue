@@ -7,7 +7,7 @@ import A11yContent from '@tds/core-a11y-content';
 
 import Layout from '../Layout';
 import useWatches from '../../../hooks/watches';
-import WatchCard from '../WatchCard';
+import ProductCard from '../ProductCard';
 import { API_URL } from '../../../lib/configuration';
 
 const imageProps = {
@@ -37,12 +37,12 @@ const Watches = () => {
                                 {
                                     data?.map(watch => (
                                         <FlexGrid.Col key={watch.name} xs={12} sm={4} lg={3}>
-                                            <WatchCard
+                                            <ProductCard
                                                 {...watch}
                                                 Image={<WatchImage alt={`${watch.brand} ${watch.name} watch picture`} />}
                                                 disclaimer={[
-                                                    'TELUS Easy Payment and Bring-It-Back applied.', 
-                                                    'Read legal footnote', 
+                                                    'TELUS Easy Payment and Bring-It-Back applied.',
+                                                    'Read legal footnote',
                                                     'Taxes due upfront.'
                                                 ]}
                                             />
