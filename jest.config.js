@@ -6,6 +6,7 @@ module.exports = {
     path.resolve('jest/setupEnzyme.js')
   ],
   setupFilesAfterEnv: [
-    path.resolve('jest/setupMsw.js')
+    path.resolve('jest/setupMsw.js'),
+    path.resolve('jest/setupJestDom.js'),
   ],
 }
