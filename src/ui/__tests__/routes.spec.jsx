@@ -5,6 +5,7 @@ import {mount, configure} from 'enzyme';
 import App from '../components/App';
 import Home from '../components/Home';
 import NotFound from '../components/NotFound';
+import Watches from '../components/Watches';
 
 describe('Application routes', () => {
   it('should render a Home component', () => {
@@ -15,6 +16,16 @@ describe('Application routes', () => {
     );
 
     expect(wrapper.find(Home)).toHaveLength(1);
+  });
+  
+  it('should render the Watches component', () => {
+    const wrapper = mount(
+      <App history={createMemoryHistory({
+        initialEntries: ['/watches']
+      })} />  
+    );
+
+    expect(wrapper.find(Watches)).toHaveLength(1);
   });
   
   it('unknown routes (404) should render a NotFound component', () => {

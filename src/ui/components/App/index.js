@@ -7,6 +7,7 @@ import CSSReset from '@tds/core-css-reset'
 
 import Home from '../Home';
 import NotFound from '../NotFound';
+import Watches from '../Watches';
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,9 @@ const App = ({ history = createBrowserHistory() }) => (
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/watches">
+          <Watches />
         </Route>
         <Route path="*">
           <NotFound />
