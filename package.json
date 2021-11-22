@@ -11,6 +11,7 @@
   "dependencies": {
     "@tds/core-a11y-content": "^2.3.0",
     "@tds/core-box": "^2.4.0",
+    "@tds/core-breadcrumbs": "^2.3.0",
     "@tds/core-button-link": "^3.3.0",
     "@tds/core-card": "^2.6.0",
     "@tds/core-css-reset": "^3.0.1",
