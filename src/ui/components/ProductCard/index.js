@@ -19,7 +19,7 @@ const CardDisclaimer = ({ sentences }) => (
 )
 
 const ProductCard = ({ name, brand, price, Image, disclaimer }) => (
-  <Card fullHeight variant="defaultWithBorder">
+  <Card data-testid="product-card" fullHeight variant="defaultWithBorder">
     <Box below={3}>
       {Image}
     </Box>
