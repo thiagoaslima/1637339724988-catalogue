@@ -9,11 +9,15 @@
     "unit:w": "jest --watch"
   },
   "dependencies": {
+    "@tds/core-a11y-content": "^2.3.0",
     "@tds/core-box": "^2.4.0",
     "@tds/core-button-link": "^3.3.0",
     "@tds/core-css-reset": "^3.0.1",
     "@tds/core-heading": "^3.0.8",
+    "@tds/core-link": "^2.3.0",
     "@tds/core-paragraph": "^2.1.0",
+    "@tds/core-spinner": "^3.2.0",
+    "@tds/core-unordered-list": "^3.1.0",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "enzyme": "^3.11.0",
