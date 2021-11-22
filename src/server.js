@@ -50,6 +50,7 @@ router.get('/iphones', function(req, res) {
 
 app.use(cors({ origin: 'http://localhost:8080' }));
 app.use('/', router);
+app.use(express.static('public'));
 
 app.listen(PORT, () => {
   console.log(`API started on port ${PORT}`);
