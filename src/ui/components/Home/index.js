@@ -9,6 +9,9 @@ const Home = () => (
         <nav>
             <UnorderedList>
                 <UnorderedList.Item>
+                    <LinkWrapper to="/iphones">Iphones</LinkWrapper>
+                </UnorderedList.Item>
+                <UnorderedList.Item>
                     <LinkWrapper to="/watches">Watches</LinkWrapper>
                 </UnorderedList.Item>
             </UnorderedList>

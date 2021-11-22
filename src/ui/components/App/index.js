@@ -8,6 +8,7 @@ import CSSReset from '@tds/core-css-reset'
 import Home from '../Home';
 import NotFound from '../NotFound';
 import Watches from '../Watches';
+import Iphones from '../Iphones';
 
 const queryClient = new QueryClient();
 
@@ -19,8 +20,11 @@ const App = ({ history = createBrowserHistory() }) => (
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/watches">
+        <Route path="/watches">
           <Watches />
+        </Route>
+        <Route path="/iphones">
+          <Iphones />
         </Route>
         <Route path="*">
           <NotFound />
