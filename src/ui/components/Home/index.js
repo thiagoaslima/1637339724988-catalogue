@@ -1,6 +1,19 @@
 import React from 'react';
-import Heading from '@tds/core-heading';
+import UnorderedList from '@tds/core-unordered-list';
 
-const Home = () => (<Heading level="h1">Device Catalogue</Heading>);
+import Layout from '../Layout';
+import LinkWrapper from '../LinkWrapper';
+
+const Home = () => (
+    <Layout pageTitle="Device Catalogue">
+        <nav>
+            <UnorderedList>
+                <UnorderedList.Item>
+                    <LinkWrapper to="/watches">Watches</LinkWrapper>
+                </UnorderedList.Item>
+            </UnorderedList>
+        </nav>
+    </Layout>
+);
 
 export default Home;
