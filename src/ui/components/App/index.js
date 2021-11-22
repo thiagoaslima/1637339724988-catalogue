@@ -2,7 +2,6 @@ import React from 'react';
 import { createBrowserHistory } from 'history';
 import { Router, Switch, Route } from 'react-router-dom';
 import { QueryClientProvider, QueryClient } from "react-query";
-import { ReactQueryDevtools } from 'react-query/devtools'
 import CSSReset from '@tds/core-css-reset'
 
 import Home from '../Home';
@@ -31,7 +30,6 @@ const App = ({ history = createBrowserHistory() }) => (
         </Route>
       </Switch>
     </Router>
-    <ReactQueryDevtools initialIsOpen={false} />
   </QueryClientProvider>
 );
 
