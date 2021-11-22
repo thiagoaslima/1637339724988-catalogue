@@ -1,13 +1,17 @@
 import React from 'react';
-import { Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+import { Router, Switch, Route } from 'react-router-dom';
+import { QueryClientProvider, QueryClient } from "react-query";
+import { ReactQueryDevtools } from 'react-query/devtools'
 import CSSReset from '@tds/core-css-reset'
 
 import Home from '../Home';
 import NotFound from '../NotFound';
 
+const queryClient = new QueryClient();
+
 const App = ({ history = createBrowserHistory() }) => (
-  <>
+  <QueryClientProvider client={queryClient}>
     <CSSReset />
     <Router history={history}>
       <Switch>
@@ -19,7 +23,8 @@ const App = ({ history = createBrowserHistory() }) => (
         </Route>
       </Switch>
     </Router>
-  </>
+    <ReactQueryDevtools initialIsOpen={false} />
+  </QueryClientProvider>
 );
 
 export default App;
