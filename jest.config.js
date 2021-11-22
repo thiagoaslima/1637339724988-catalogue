@@ -4,5 +4,8 @@ module.exports = {
   rootDir: './src',
   setupFiles: [
     path.resolve('jest/setupEnzyme.js')
-  ]
+  ],
+  setupFilesAfterEnv: [
+    path.resolve('jest/setupMsw.js')
+  ],
 }
